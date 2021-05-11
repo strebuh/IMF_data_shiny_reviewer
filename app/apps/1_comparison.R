@@ -71,9 +71,9 @@ reviewer_ui <- function(id){
                                           br(),
                                           h3(htmlOutput(ns("radar_plot_desc")), style = "text-align: justify; font-size: 16px; margin-left: 20px;  margin-right: 20px"),
                                           br(),
-                                          plotlyOutput(ns("radar_plot"), height="400") %>%  shinycssloaders::withSpinner(color = col_nieb, type = 6),
+                                          plotlyOutput(ns("radar_plot"), height="400"),
                                           hr(),
-                                          DT::dataTableOutput(ns("radar_table")) %>%  shinycssloaders::withSpinner(color = col_nieb, type = 6)
+                                          DT::dataTableOutput(ns("radar_table"))
                                           ),
                                  
                   tabPanel("Countries filter",
